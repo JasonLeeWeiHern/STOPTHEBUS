@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="217dp"
+                    android:layout_height="135dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:srcCompat="@drawable/clementi_sports_center" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="242dp"
+                    android:layout_height="166dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/clemeti_mall" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="255dp"
+                    android:layout_height="108dp"
+                    android:contentDescription="TODO1"
+                    app:srcCompat="@drawable/clementi_321" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">StopTheBus!</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_past_trips">past_trips</string>
+    <string name="clementi_interchange">Clementi Interchange</string>
+    <string name="btnClementiInt">Button</string>
+    <string name="bus_96">96</string>
+    <string name="viewClementi">Button</string>
+    <string name="ntuc_fairprice">NTUC Fairprice</string>
+    <string name="blk_365">Blk 365</string>
+    <string name="fac_of_engineering">Fac of Engineering</string>
+    <string name="fac_of_architecture">fac of architecture</string>
+    <string name="fac_of_design_env"><![CDATA[fac of design & Env]]></string>
+    <string name="information_technology">information technology</string>
+    <string name="opp_yusof_ishak_house">opp yusof ishak house</string>
+    <string name="yale_nus_college">Yale-nus College</string>
+    <string name="nus_raffle_hall">nus raffle hall</string>
+    <string name="aft_clementu_ave_1">aft clementu ave 1</string>
+    <string name="blk_410">blk 410</string>
+    <string name="blk_455">blk 455</string>
+    <string name="clementi_station">clementi station</string>
+
+    <!--<item name="search_bus" type="id"/>-->
+
+    <string-array name="bus_stops">
+        <item>Clementi Int</item>
+        <item>NTUC Fairprice</item>
+        <item>Blk 365</item>
+        <item>Yale-NUS College</item>
+        <item>NUS Fac of Engrg</item>
+        <item>NUS Fac of Architecture</item>
+        <item>NUS Fac of Design and Env</item>
+        <item>Information Technology</item>
+        <item>Opp Yusof Ishak House</item>
+        <item>NUS Raffles Hall</item>
+        <item>Aft Clementi Ave 1</item>
+        <item>Blk 410</item>
+        <item>Blk 455</item>
+        <item>Clementi Stn</item>
+        <item>Clementi Int</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>2 mins</item>
+        <item>3 mins</item>
+        <item>2 mins</item>
+        <item>2 mins</item>
+        <item>3 mins</item>
+        <item>1 min</item>
+        <item>1 min</item>
+        <item>1 min</item>
+        <item>1 min</item>
+        <item>1 min</item>
+        <item>2 mins</item>
+        <item>3 mins</item>
+        <item>2 mins</item>
+        <item>2 mins</item>
+        <item>1 min</item>
+
+    </string-array>
+
+
+    <string-array name="my_buses">
+        <item>188</item>
+        <item>95</item>
+        <item>975</item>
+        <item>190</item>
+        <item>979</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

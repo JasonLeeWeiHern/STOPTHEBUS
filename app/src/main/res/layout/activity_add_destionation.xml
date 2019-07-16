@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Destination">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="350dp"
+        android:thumb="@drawable/sw_thumb"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/vibration"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="260dp"
+        android:thumb="@drawable/sw_thumb"
+        app:track="@drawable/sw_track"
+        app:showText="true"/>
+
+    <TextView
+        android:id="@+id/setVibration"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:gravity="center"
+        android:layout_width="247dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="321dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="261dp"
+        android:text="Enable Vibration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/setReminder2"
+        android:layout_width="247dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="352dp"
+        android:text="Enable Remind my stop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:textAllCaps="true" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="382dp"
+        android:layout_marginBottom="346dp"
+        app:srcCompat="@drawable/notification" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="377dp"
+        android:layout_marginBottom="253dp"
+        app:srcCompat="@drawable/vibration" />
+
+    <Button
+        android:id="@+id/add_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="501dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="57dp"
+        android:text="ADD DESTINATION" />
+</RelativeLayout>

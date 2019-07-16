@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Destination">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/vibration"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="      Vibration                 "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="20dp"
+        android:thumb="@drawable/sw_thumb"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/reminder"
+        android:layout_width="281dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/vibration"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="27sp"
+        android:text="      Remind my stop   "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20dp"
+        android:thumb="@drawable/sw_thumb"
+        app:showText="true"
+        app:track="@drawable/sw_track"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="315dp"
+        app:srcCompat="@drawable/vibration" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="400dp"
+        app:srcCompat="@drawable/notification" />
+
+    <Button
+        android:id="@+id/add_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/reminder"
+        android:layout_marginBottom="193dp"
+        android:layout_centerHorizontal="true"
+        android:text="ADD DESTINATION" />
+</RelativeLayout>
