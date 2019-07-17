@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
 
     public static final String text1 = "mtext1";
 
-    private Button button;
+    private Button button_destiantion;
+    private Button button_location;
     private ExampleAdapter adapter;
     private ExampleAdapter adapter1;
     private List<ExampleItem> exampleList;
@@ -37,13 +38,23 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
         fillExampleList();
         setUpRecyclerView();
 
-        button = (Button) findViewById(R.id.destination);
-        button.setOnClickListener(new View.OnClickListener() {
+        button_destiantion = (Button) findViewById(R.id.destination);
+        button_destiantion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openDestination();
             }
         });
+
+        button_location = (Button) findViewById(R.id.location);
+        button_location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLocation();
+            }
+        });
+
+
 
         refreshLayout = findViewById(R.id.refreshLayout);
         refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -57,6 +68,11 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
 
     public void openDestination() {
         Intent intent = new Intent(this, Destination.class);
+        startActivity(intent);
+    }
+
+    public void openLocation() {
+        Intent intent = new Intent(this, GoogleMaps.class);
         startActivity(intent);
     }
 
