@@ -1,7 +1,6 @@
 package com.example.stopthebus;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,7 +10,6 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,8 +37,7 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
 
 
     class ExampleViewHolder extends RecyclerView.ViewHolder {
-        TextView textView1;
-        TextView textView2;
+        TextView textView1, textView2;
         RelativeLayout parent_layout;
 
         ExampleViewHolder(View itemView) {
@@ -48,6 +45,8 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
             textView1 = itemView.findViewById(R.id.text_view1);
             textView2 = itemView.findViewById(R.id.text_view2);
             parent_layout = itemView.findViewById(R.id.parent_layout);
+
+
 
 
             itemView.setOnClickListener(new View.OnClickListener() {

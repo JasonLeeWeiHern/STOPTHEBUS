@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".busStopList">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="386dp"
+        android:layout_height="394dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/btnClementi"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/btnNTUC"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btn365"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnYALE"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnEng"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnArch"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnDes"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnIT"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnYIH"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnRaffles"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnAve1"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btn410"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btn455"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/btnClementiStn"
+                    android:layout_width="63dp"
+                    android:layout_height="87dp"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_clementi_int"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Prince George's Park"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_fp"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Kent Ridge MRT"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_blk365"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="LT27"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_yale"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="UHall"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_foe"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Opp University Health Ctr"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_foa"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="YIH"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_fode"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Central Lib"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_IT"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="LT13"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_oppyusof"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="AS5"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_RH"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="COM2"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_aftclementi"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="BIZ 2"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_blk410"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Opp TCOMS"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_blk455"
+                    android:layout_width="316dp"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="PGP Hse 7"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_clemntistation"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+                    android:text="Prince George's Park"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/busId"
+        android:layout_width="108dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="A1"
+        android:textAlignment="center"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

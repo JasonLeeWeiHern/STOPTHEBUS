@@ -31,18 +31,44 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".busStopList" />
+        <activity android:name=".busStopList"
+            android:label="96"/>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Destination" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login" />
+        <activity android:name=".Destination"
+            android:label="Alarm"/>
+        <activity android:name=".Help"
+            android:label="Contact Us"/>
+        <activity android:name=".NearbyStops"
+            android:label="BusStops Near You"/>
+        <activity android:name=".AllBusesNumber"
+            android:label="Buses"/>
+        <activity android:name=".bus_95"
+            android:label="95"/>
+        <activity android:name=".bus_A1"
+            android:label="A1"/>
+        <activity android:name=".bus_A2"
+            android:label="A2"/>
+        <activity android:name=".bus_B1"
+            android:label="B1"/>
+        <activity android:name=".bus_B2"
+            android:label="B2"/>
+        <activity android:name=".bus_btc1"
+            android:label="BTC1"/>
+        <activity android:name=".bus_C"
+            android:label="C"/>
+        <activity android:name=".bus_D1"
+            android:label="D1"/>
+        <activity android:name=".bus_D2"
+            android:label="D2"/>
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">

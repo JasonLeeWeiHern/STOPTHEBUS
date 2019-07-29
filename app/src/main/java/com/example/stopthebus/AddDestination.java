@@ -10,4 +10,12 @@ public class AddDestination extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_images_clementi_int);
     }
+
+    public static class bus_d1 extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_d1);
+        }
+    }
 }

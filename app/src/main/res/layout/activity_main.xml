@@ -10,10 +10,14 @@
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
-        android:layout_height="260dp">
+        android:layout_height="502dp"
+        android:layout_alignBottom="@+id/bustopname"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="103dp">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view"
+            android:id="@+id/recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/white"
@@ -25,36 +29,53 @@
 
     <LinearLayout
         android:id="@+id/wow"
-        android:layout_width="match_parent"
-        android:layout_height="128dp"
-        android:layout_above="@id/bustopname"
-        android:layout_below="@id/refreshLayout"
-        android:layout_marginTop="159dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center">
+        android:layout_width="381dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/bustopname"
+        android:layout_marginBottom="54dp"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/nearby"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/wow"
+            android:background="@color/colorPrimary"
+            android:text="Nearby"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+        <Button
+            android:id="@+id/allbuses"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:text="Buses"
+            android:textSize="18dp"
+            android:layout_marginStart="3dp"/>
 
         <Button
             android:id="@+id/location"
-            android:layout_width="150dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="3dp"
             android:background="@color/colorPrimary"
-            android:text="Location"
+            android:text="Maps"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/destination"
-            android:layout_width="150dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/wow"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="3dp"
             android:layout_toRightOf="@id/location"
             android:background="@color/colorPrimary"
-            android:text="Destination"
+            android:text="Alarm"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
+
     </LinearLayout>
 
 
@@ -69,7 +90,5 @@
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
         android:textSize="35sp" />
-
-
 
 </RelativeLayout>

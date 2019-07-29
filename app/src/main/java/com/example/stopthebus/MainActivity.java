@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
 
     private Button button_destiantion;
     private Button button_location;
+    private Button button_nearby;
+    private Button button_allbuses;
     private ExampleAdapter adapter;
-    private ExampleAdapter adapter1;
     private List<ExampleItem> exampleList;
     private RecyclerView.LayoutManager mLayoutManager;
 
@@ -52,6 +53,21 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
             }
         });
 
+        button_nearby = (Button) findViewById(R.id.nearby);
+        button_nearby.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNearby();
+            }
+        });
+
+        button_allbuses = (Button) findViewById(R.id.allbuses);
+        button_allbuses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAllBusesNumber();
+            }
+        });
 
 
         refreshLayout = findViewById(R.id.refreshLayout);
@@ -64,14 +80,29 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
 
     }
 
+    public void openAllBusesNumber() {
+        Intent intent = new Intent(this, AllBusesNumber.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
+
+
     public void openDestination() {
         Intent intent = new Intent(this, Destination.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
     public void openLocation() {
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+    }
+
+    public void openNearby() {
+        Intent intent = new Intent(this,NearbyStops.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
 
@@ -81,10 +112,11 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
         exampleList.add(new ExampleItem("96", "15mins"));
         exampleList.add(new ExampleItem("95", "13mins"));
         exampleList.add(new ExampleItem("A1", "ARR"));
+        exampleList.add(new ExampleItem("D1", "ARR"));
     }
 
     private void setUpRecyclerView() {
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         adapter = new ExampleAdapter(exampleList);
@@ -103,6 +135,8 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) searchItem.getActionView();
 
+
+
         //searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
 
 
@@ -119,6 +153,19 @@ public class MainActivity extends AppCompatActivity implements ExampleAdapter.On
             }
         });
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.help:
+                Intent intent = new Intent(MainActivity.this,Help.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                return true;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
