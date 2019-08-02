@@ -69,6 +69,28 @@
             android:label="D1"/>
         <activity android:name=".bus_D2"
             android:label="D2"/>
+
+        //For all bus numbers
+        <activity android:name=".AS5_buses"
+            android:label="AS5"/>
+        <activity android:name=".CLB_buses"
+            android:label="Central Library"/>
+        <activity android:name=".COM2_buses"
+            android:label="COM2"/>
+        <activity android:name=".LT13_buses"
+            android:label="LT13"/>
+        <activity android:name=".Museum_buses"
+            android:label="Museum"/>
+        <activity android:name=".Opp_UHC_buses"
+            android:label="Opp University Health Ctr"/>
+        <activity android:name=".Opp_Yih_buses"
+            android:label="Opp Yusof Ishak Hse"/>
+        <activity android:name=".UHC_buses"
+            android:label="University Health Ctr"/>
+        <activity android:name=".Ventus_buses"
+            android:label="Ventus"/>
+
+
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">

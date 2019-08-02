@@ -3,6 +3,8 @@ package com.example.stopthebus;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -61,78 +63,12 @@ public class busStopList extends AppCompatActivity {
                 MyCustomAlertDialog2();
             }
         });
-//        btn_blk365.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
         btn_yale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 MyCustomAlertDialog3();
             }
         });
-//        btn_foe.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
-//        btn_foa.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
-//        btn_fode.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
-//        btn_oppyusof.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
-        btn_IT.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MyCustomAlertDialog();
-            }
-        });
-//        btn_RH.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
-//        btn_aftclementi.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
-//        btn_blk410.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
-//        btn_blk455.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
-//        btn_clemntistation.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MyCustomAlertDialog();
-//            }
-//        });
         btn_clementi_int_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -211,6 +147,13 @@ public class busStopList extends AppCompatActivity {
         });
 
         myDialog.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.example_menu_2, menu);
+        return true;
     }
 
 }

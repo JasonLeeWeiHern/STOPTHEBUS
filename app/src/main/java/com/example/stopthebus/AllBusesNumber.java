@@ -22,7 +22,7 @@ public class AllBusesNumber extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.example_item_3);
+        setContentView(R.layout.activity_all_bus_numbers);
 
         btn_A1 = (Button) findViewById(R.id.btn_A1);
         btn_A1.setOnClickListener(new View.OnClickListener() {
